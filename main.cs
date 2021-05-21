@@ -36,25 +36,19 @@ class MainClass {
     }
 
     //If array2 is exhausted but array1 still has elements
-    if(i<array1.Length)
+    while(i<array1.Length)
     {
-      while(i<array1.Length)
-      {
-        finalMergedArray[m]=array1[i];
-        m++;
-        i++;
-      }
+      finalMergedArray[m]=array1[i];
+      m++;
+      i++;
     }
 
     //If array1 is exhausted but array2 still has elements
-    if(j<array2.Length)
+    while(j<array2.Length)
     {
-      while(j<array2.Length)
-      {
-        finalMergedArray[m]=array2[j];
-        m++;
-        j++;
-      }
+      finalMergedArray[m]=array2[j];
+      m++;
+      j++;
     }
     
     return finalMergedArray;
